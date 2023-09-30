@@ -6,6 +6,13 @@ terraform {
     }
   }
   required_version = "~> 1.5.6"
+  cloud {
+    organization = "mevijay"
+
+    workspaces {
+      name = "vcstfcli"
+    }
+  }
 }
 
 provider "aws" {
