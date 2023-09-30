@@ -1,0 +1,14 @@
+name: "my first pipeline"
+on:
+  workflow_dispatch:
+jobs:
+  terraform-plan:
+    name: "Terraform Plan"
+    runs-on: ubuntu-latest
+    steps:
+      - name: 'print hi'
+        run: echo "Hello step1"
+      - name: 'print step2'
+        run: echo "Hello step2"
+      - name: 'print stp3'
+        run: echo "Hello step3"
